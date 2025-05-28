@@ -1,0 +1,151 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #E0D1C9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #E0BE80;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  max-width: 400px; 
+  margin: 50px auto; 
+}
+
+/
+h1 {
+  text-align: center;
+  justify-content: center;
+  color: #E0808B;
+  margin-bottom: 20px;
+}
+
+
+.campo {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px; 
+}
+
+
+.campo.usuario::before {
+  content: "👤";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  font-size: 18px;
+}
+
+.campo.senha::before {
+  content: "🔒";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #E0808B;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: #E0808B;
+  box-shadow: 0 0 3px rgba(107, 70, 193, 0.2);
+}
+
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+button[type="submit"] {
+  background-color: #E0808B;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #E0808B;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #E0808B;
+  size: 1.5px;
+  border: 1px solid #E0808B;
+  transition: background-color 0.4s;
+}
+
+
+button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* Celular */
+@media screen and (max-width: 600px) {
+.container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+      body{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+/* Notebooks */
+@media screen and (min-width: 1024px) {
+
+.container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        height: 40%;
+        
+    }
+    
+
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <h1 style="text-align: center;">Cadastre Aqui</h1>
+      
+      <form onsubmit="handleSubmit(event)">
+        <div class="campo usuario">
+          <label for="nome">Nome de Usuário:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="campo senha">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required />
+        </div>
+
+        <div class="botoes">
+          <button type="submit">Enviar</button>
+          <button type="reset" onclick="handleReset()">Limpar</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
